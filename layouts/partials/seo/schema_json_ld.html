@@ -7,7 +7,6 @@
          "@id": "{{ .Site.BaseURL }}"
     },
     "articleSection" : "{{ .Section }}",
-    "articleBody" : "{{ .Content | plainify }}"
     "name" : "{{ .Title }}",
     "headline" : "{{ .Title }}",
     "description" : "{{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ end }}{{ end }}",
