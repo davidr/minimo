@@ -11,8 +11,21 @@
     "headline" : "{{ .Title }}",
     "description" : "{{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ end }}{{ end }}",
     "inLanguage" : "en-US",
-    "author" : "David Ressman",
-    "publisher": "David Ressman",
+    "author" : {
+        "@type": "Person",
+        "name": "David Ressman"
+    },
+    "Publisher": {
+        "@type": "Organization",
+        "name": "David Ressman",
+        "logo": {
+            "@type": "ImageObject",
+            "name": "davidrGravatar",
+            "width": "80",
+            "height": "80",
+            "url": "https://blog.ressman.org/images/logo.png"
+        }
+    },
     "image": "https://blog.ressman.org/images/logo.png",
     "copyrightHolder" : "David Ressman",
     "copyrightYear" : "{{ .Date.Format "2006" }}",
